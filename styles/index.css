@@ -1,0 +1,151 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*--HEADER_START--*/
+.header {
+    background: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: solid 1px black;
+    color: white;
+    display: table;
+    width: 100%;
+}
+.header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: .5em auto .25em auto;
+}
+.header > span.brandName h1 {
+    display: inline-block
+}
+
+.header > span {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header > span.login {
+    text-align: right;
+    padding-right: 25%;
+}
+
+button.login-button {
+    display: inline;
+    color: white;
+    background: none;
+}
+
+form.loginForm {
+    display: none;
+    font-size: 0.75em;
+}
+form.loginForm > * + * {
+    margin-left: 1em;
+}
+form.loginForm > span.field {
+    display: inline-block;
+    vertical-align: middle;
+}
+form.loginForm > span.field > * {
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+}
+form.loginForm > span.field > * + * {
+    margin-top: .25em;
+}
+form.loginForm > span.field a {
+    color: #9cb4d8;
+}
+form.loginForm > span.field a:hover {
+    text-decoration: underline;
+}
+form.loginForm > span.field input:focus {
+    border: none;
+}
+/*--HEADER_END--*/
+
+/*--MAIN_START--*/
+main.main {
+    text-align: center;
+}
+.main > form {
+    width: 22%;
+    margin: auto;
+    text-align: left;
+}
+
+.main input {
+    height: 1.5rem;
+    border-radius: .5em;
+
+    padding: .5em;
+}
+
+.main > form > * {
+    display: block;
+}
+.main > form > * + * {
+    margin-top: 1.25em;
+}
+.main > form > h1 {
+    font-size: 2.5rem;
+    margin: .5em auto 0 auto;
+}
+.main > form > span.names {
+    display: table;
+    width: 100%;
+}
+.main > form > span.names > span {
+    display: table-cell;
+    width: 50%;
+}
+.main > form > span.names > span.firsName {
+    text-align: left;
+}
+.main > form > span.names > span.lastName {
+    text-align: right;
+}
+.main > form > span.names > span > input {
+    width: 100%;
+}
+.main > form > span.names > span.firsName > input {
+    width: 85%;
+}
+
+.main > form span.field > label {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+.main > form span.field > input {
+
+}
+
+.main > form > span.field > input {
+    width: 100%;
+}
+#dob {
+    display: block;
+    margin: .5em auto .5em auto;
+}
+.radio {
+    display: inline;
+    vertical-align: middle;
+}
+.radio label {
+    margin: 0;
+    padding: 0;
+}
+/*--MAIN_END--*/
